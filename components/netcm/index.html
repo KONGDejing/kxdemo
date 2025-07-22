@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WIFI设置</title>
+    </head>
+    <body>
+        <br>
+        <h1>WIFI设置</h1>
+        <br>
+        <form action="/wifi" method="post" enctype="text/plain">
+            <p>
+                <input type="text" name="ssid" placeholder="请输入WIFI名称">
+            </p>
+            <p>
+                <input type="password" name="pwd" placeholder="请输入密码">
+            </p>
+            <input type="submit" value="连接">
+        </form>
+    </body>
+</html>
+<style>
+    body{
+        text-align: center;
+    }
+    h1{
+        font-size: 30px;
+    }
+    input{
+        width: 200px;
+        height: 30px;
+    }
+    input[type="submit"]{
+        width: 100px;
+        height: 30px;
+    }
+    input[type="text"],input[type="password"]{
+        margin-bottom: 10px;
+    }
+</style>

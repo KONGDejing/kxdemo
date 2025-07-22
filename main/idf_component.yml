@@ -1,0 +1,11 @@
+dependencies:
+  espressif/esp-sr: 
+    version: "^2.0.3"
+    public: true
+  
+  espressif/esp_audio_codec:
+    version: "^2.2.1"
+    public: true
+    
+  idf:
+    version: ">=4.1.0"

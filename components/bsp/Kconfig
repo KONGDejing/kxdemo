@@ -1,0 +1,25 @@
+menu "BSP"
+    choice BSP_BOARD_NAME
+        prompt "Board Name"
+        default BSP_Box3
+        help 
+            Select the board
+        
+        config BSP_Box3
+            bool "BSP_Box3"
+            select BSP_ENABLE_DISPLAY
+        config BSP_Dnesp32S3
+            bool "BSP_Dnesp32S3"
+            select BSP_ENABLE_DISPLAY
+        config BSP_KxDemo
+            bool "BSP_KxDemo"
+        config BSP_None
+            bool "None"
+    endchoice
+
+    config BSP_ENABLE_DISPLAY
+        bool "Enable Display"
+        default n
+        help
+            Enable Display
+endmenu
